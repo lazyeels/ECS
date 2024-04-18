@@ -1,37 +1,40 @@
 public class Player {
+    public String name;
+    public Position position;
     private float vx;
     private float vy;
     public float speed;
 
-    public Coordinates coordinates = new Coordinates(0.0f, 0.0f);
+    public Player(String name, float x, float y) {
+        this.name = name;
 
-    public Player(float x, float y) {
-        this.coordinates.x = x;
-        this.coordinates.y = y;
+        this.position = new Position("coordinates", x, y, 2.0f);
+        this.position.y = y;
 
         this.vx = 0.0f;
         this.vy = 0.0f;
 
         this.speed = 2.0f;
-        System.out.println("Player initialised.");
+        System.out.printf("Player %s initialised.\n", this.name);
     }
 
-    public Coordinates getPosition() {
-        return this.coordinates;
+    public Position getPosition() {
+        return this.position;
     }
 
     public void setPosition(float x, float y) {
-        this.coordinates.x = x;
-        this.coordinates.y = y;
+        this.position.x = x;
+        this.position.y = y;
     }
 
     public void move() {
-        System.out.printf("Current Coords: (%f, %f)\n", this.coordinates.x, this.coordinates.y);
-        this.vx = this.speed;
-        this.coordinates.x += this.vx;
-        this.coordinates.y += this.vy;
+        System.out.printf("Player moving from coords: (%f, %f)\n", this.position.x, this.position.y);
 
-        System.out.printf("New Coords: (%f, %f)\n", this.coordinates.x, this.coordinates.y);
+        this.vx = this.speed;
+        this.position.x += this.vx;
+        this.position.y += this.vy;
+
+        System.out.printf("Player moving to coords: (%f, %f)\n", this.position.x, this.position.y);
 
     }
 

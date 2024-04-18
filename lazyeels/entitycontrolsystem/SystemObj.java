@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class SystemObj {
+abstract class SystemObj {
    public Engine engine;
    public String name;
 

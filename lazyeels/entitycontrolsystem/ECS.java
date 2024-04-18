@@ -13,7 +13,7 @@ public class ECS
       engine = gameEngine;
       sys = new Systems(engine);
 
-      System.out.println("[ECS] Initialised.");
+      System.out.println("\n[ECS] Initialised.\n");
    }
 
    public void clear()
@@ -30,7 +30,7 @@ public class ECS
       entities.add(entity);
       _entityCount = entities.size();
 
-      System.out.printf("[ECS] Added entity %d\n", entity.id);
+      System.out.printf("\n[ECS] Added entity %d\n", entity.id);
    }
 
    public Entity removeEntity(int entityID)
@@ -38,7 +38,7 @@ public class ECS
       Entity entity = entities.remove(entityID);
       _entityCount = entities.size();
 
-      System.out.printf("[ECS] Removing entity %s. Total entities: %d\n", entityID, this._entityCount);
+      System.out.printf("\n[ECS] Removing entity %s. Total entities: %d\n", entityID, this._entityCount);
       return entity;
    }
 
@@ -46,25 +46,22 @@ public class ECS
    {
       sys.add(system);
 
-      System.out.printf("[ECS] Added system %s\n", system.name);
+      System.out.printf("\n[ECS] Added system %s\n\n", system.name);
    }
 
    public void removeSystem(String systemName)
    {
-      System.out.printf("[ECS] Removed system %s\n", systemName);
+      System.out.printf("\n[ECS] Removed system %s\n", systemName);
    }
 
    public static void update()
    {
-      System.out.println("[ECS] Updating Systems.");
-
-      Entity e;
+      System.out.println("\n[ECS] Updating Systems.\n");
 
       for (int i=0; i < sys.systems.size(); i++) {
          SystemObj s = sys.getSystem(i);
 
          s.update(entities);
       }
-
    }
 }
