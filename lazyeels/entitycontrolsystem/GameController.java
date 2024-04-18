@@ -4,19 +4,20 @@ public class GameController
    public static ECS ecs = new ECS(engine);
    public static Player player = new Player("Lazyeels", 100, 100);
 
-   public enum Status{RUNNING, PAUSED, GAMEOVER};
+   public enum Status{RUNNING, PAUSED, GAMEOVER}
+
    boolean isRunning = true;
+   double AmountOfTicks = 30;
+   double ns = 1000000000 / AmountOfTicks;
+   double delta = 0;
+   int frames = 0;
 
    public void run()
    {
       long lastime = System.nanoTime();
-      double AmountOfTicks = 30;
-      double ns = 1000000000 / AmountOfTicks;
-      double delta = 0;
-      int frames = 0;
       double time = System.currentTimeMillis();
 
-      while(isRunning == true) {
+      while(isRunning) {
          long now = System.nanoTime();
          delta += (now - lastime) / ns;
          lastime = now;
@@ -35,7 +36,8 @@ public class GameController
       }
    }
 
-   public static void init() {
+   public static void init()
+   {
       Status gameStatus = Status.RUNNING;
 
       ECS.addSystem(new Render(engine, "render"));
@@ -54,16 +56,20 @@ public class GameController
          ecs.addEntity(e);
       }
    }
-   public static void update() {
+
+   public static void update()
+   {
       player.update();
       ECS.update();
    }
 
-   public static void render() {
+   public static void render()
+   {
 
    }
 
-   public static void main(String[] args) {
+   public static void main(String[] args)
+   {
       GameController game = new GameController();
       game.init();
       game.run();
