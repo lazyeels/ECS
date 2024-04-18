@@ -9,5 +9,7 @@ public class Appearance extends Components
         this.color = color;
         this.width = width;
         this.height = height;
+
+        System.out.printf("[Component] Component %s added: color: %s, w: %d, h: %d\n", name, color, width, height);
     }
 }
