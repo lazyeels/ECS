@@ -10,8 +10,8 @@ public class SystemObj {
       this.name = name;
    }
 
-   public static void update(ArrayList<Entity> entities)
+   public void update(ArrayList<Entity> entities)
    {
-
+      System.out.printf("[SystemObj] Updating system: %s\n", this.name);
    }
 }

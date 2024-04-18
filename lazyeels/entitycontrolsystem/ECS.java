@@ -5,36 +5,40 @@ public class ECS
    public static Engine engine;
    public static Systems sys;
 
-   public ArrayList<Entity> entities = new ArrayList<Entity>();
+   public static ArrayList<Entity> entities = new ArrayList<Entity>();
    public int _entityCount = 0;
 
-   public ECS (Engine engine)
+   public ECS (Engine gameEngine)
    {
-      this.engine = engine;
-      this.sys = new Systems(engine);
+      engine = gameEngine;
+      sys = new Systems(engine);
+
+      System.out.println("[ECS] Initialised.");
    }
 
    public void clear()
    {
-      this.entities.clear();
+      entities.clear();
    }
 
    public Entity getEntity(int entityID)
    {
-      return this.entities.get(entityID);
+      return entities.get(entityID);
    }
    public void addEntity(Entity entity)
    {
-      this.entities.add(entity);
-      this._entityCount = this.entities.size();
+      entities.add(entity);
+      _entityCount = entities.size();
 
-      System.out.printf("Added entity %d\n", entity.id);
+      System.out.printf("[ECS] Added entity %d\n", entity.id);
    }
 
    public Entity removeEntity(int entityID)
    {
-      Entity entity = this.entities.remove(entityID);
-      this._entityCount = this.entities.size();
+      Entity entity = entities.remove(entityID);
+      _entityCount = entities.size();
+
+      System.out.printf("[ECS] Removing entity %s. Total entities: %d\n", entityID, this._entityCount);
       return entity;
    }
 
@@ -42,22 +46,24 @@ public class ECS
    {
       sys.add(system);
 
-      System.out.printf("Added system %s\n", system.name);
+      System.out.printf("[ECS] Added system %s\n", system.name);
    }
 
    public void removeSystem(String systemName)
    {
-
+      System.out.printf("[ECS] Removed system %s\n", systemName);
    }
 
    public static void update()
    {
+      System.out.println("[ECS] Updating Systems.");
+
       Entity e;
+
       for (int i=0; i < sys.systems.size(); i++) {
          SystemObj s = sys.getSystem(i);
-         //s.update(this.entities);
-         System.out.printf("Running System %s\n", s.name);
 
+         s.update(entities);
       }
 
    }

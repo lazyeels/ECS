@@ -1,24 +1,30 @@
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Entity {
    public int id = 0;
    public String name;
 
-   public ArrayList<Components> components = new ArrayList<Components>();
+   public Map<String, Components> components = new HashMap<>();
+
 
    public Entity(int id, String name)
    {
-      id = id;
-      name = name;
+      this.id = id;
+      this.name = name;
    }
    public void addComponent (Components component)
    {
-      components.add(component);
+      components.put(component.name, component);
    }
 
-   public void removeComponent (int i) 
+   public void removeComponent (Components component)
    {
-      components.remove(i);
+      components.remove(component.name);
    }
 
+   public Map<String, Components> getComponents()
+   {
+      return components;
+   }
 }
