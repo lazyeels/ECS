@@ -39,6 +39,7 @@ public class Player {
     }
 
     public void update() {
+        this.move();
     }
 
     public void render() {
