@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc962cb6-787e-4620-97cd-e3967d955f1e" name="Changes" comment="- Added a game loop and update and render methods to Player.&#10;- Refactored code into folders." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../com" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lazyeels&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lazyeels/ECS.git&quot;,
+    &quot;accountId&quot;: &quot;527dc02c-c2ba-4ce4-baca-f3e2dcf77dd1&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2fF3qC6bqEyXhsh6GVMH7MKep4O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.ECSTest.executor": "Run",
+    "Application.GameController.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17 (2)",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/mgikh/Desktop/JavaPractice/net/lazyeels/entitycontrolsystem",
+    "last_opened_file_path": "C:/Users/mgikh/Desktop/JavaPractice/com",
+    "onboarding.tips.debug.path": "C:/Users/mgikh/Desktop/JavaPractice/com/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.tools"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mgikh\Desktop\JavaPractice\net\lazyeels\entitycontrolsystem\net\lazyeels" />
+      <recent name="C:\Users\mgikh\Desktop\JavaPractice\net" />
+      <recent name="C:\Users\mgikh\Desktop\JavaPractice\net\lazyeels\entitycontrolsystem\Systems" />
+      <recent name="C:\Users\mgikh\Desktop\JavaPractice\net\lazyeels\entitycontrolsystem\Components" />
+      <recent name="C:\Users\mgikh\Desktop\JavaPractice\net\lazyeels\entitycontrolsystem\Systems\src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="systems" />
+      <recent name="components" />
+      <recent name="net.lazyeels" />
+      <recent name="Systems" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="net" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="net" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc962cb6-787e-4620-97cd-e3967d955f1e" name="Changes" comment="" />
+      <created>1713383188439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713383188439</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First version of ECS">
+      <option name="closed" value="true" />
+      <created>1713395595859</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713395595860</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First version of ECS">
+      <option name="closed" value="true" />
+      <created>1713395707734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713395707734</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added player class.&#10;Added coordinates class.&#10;Added debug messages.">
+      <option name="closed" value="true" />
+      <created>1713433900457</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713433900458</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added player class.&#10;Added coordinates class.&#10;Added debug messages.">
+      <option name="closed" value="true" />
+      <created>1713433910164</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713433910164</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added player class.&#10;Added coordinates class.&#10;Added debug messages.">
+      <option name="closed" value="true" />
+      <created>1713433944974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713433944974</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added move component&#10;Hooked up move component with player and NPC.">
+      <option name="closed" value="true" />
+      <created>1713457711866</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713457711866</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added move component&#10;Hooked up move component with player and NPC.">
+      <option name="closed" value="true" />
+      <created>1713457729697</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713457729697</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added a game loop and update and render methods to Player.">
+      <option name="closed" value="true" />
+      <created>1713459497863</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713459497863</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added a game loop and update and render methods to Player.">
+      <option name="closed" value="true" />
+      <created>1713459640821</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713459640821</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added a game loop and update and render methods to Player.">
+      <option name="closed" value="true" />
+      <created>1713459652468</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713459652468</updated>
+    </task>
+    <task id="LOCAL-00011" summary="- Added a game loop and update and render methods to Player.&#10;- Refactored code into folders.">
+      <option name="closed" value="true" />
+      <created>1713548924477</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713548924477</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First version of ECS" />
+    <MESSAGE value="Added player class.&#10;Added coordiniates class.&#10;Added debug messages." />
+    <MESSAGE value="Added player class.&#10;Added coordinates class.&#10;Added debug messages." />
+    <MESSAGE value="Added move component&#10;Hooked up move component with player and NPC." />
+    <MESSAGE value="Added a game loop and update and render methods to Player." />
+    <MESSAGE value="- Added a game loop and update and render methods to Player.&#10;- Refactored code into folders." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added a game loop and update and render methods to Player.&#10;- Refactored code into folders." />
+  </component>
+</project>
